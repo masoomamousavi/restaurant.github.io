@@ -7,20 +7,20 @@
     <title>Branch Page</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="../css/branch.css">
+    <link rel="stylesheet" href="../css/branch-info.css">
 </head>
 
 <body>
     <!-- start nav -->
     <nav class="main-nav d-flex align-items-center">
         <div class="container menu-conetnts">
-            <div class="row container-fluid g-0 align-items-center menu-row">
-                <div class="col-2 logo-col">
+            <div class="row container-fluid g-0 d-flex  menu-row justify-content-between">
+                <div class="col-lg-2 col-5 logo-col order-2 order-lg-0">
                     <div class="logo">
                         <a class="navbar-brand" href="index.html"><img src="../assets/images/Logo.png" alt=""></a>
                     </div>
                 </div>
-                <div class="col-8 d-flex justify-content-md-start nav-col">
+                <div class="col-lg-8 col-4 d-flex nav-col order-1 ">
                     <nav class="navbar navbar-expand-lg">
                         <div class="container-fluid nav-content">
 
@@ -76,12 +76,11 @@
                         </div>
                     </nav>
                 </div>
-                <div class="col-2">
+                <div class="col-2 order-3  order-lg-2">
                     <div class="icons row d-flex justify-content-between">
-                        <div class="col-lg-3 col-md-5 col-sm-4  icon"><img src="../assets/icons/usergreen.png" alt="">
+                        <div class="col-4 col-md-5 col-lg-3 icon"><img src="../assets/icons/usergreen.png" alt="">
                         </div>
-                        <div class="col-lg-3  col-md-5 col-sm-4 icon"><img src="../assets/icons/shopping-cart.png"
-                                alt="">
+                        <div class="col-4 col-lg-3 col-md-5 icon"><img src="../assets/icons/shopping-cart.png" alt="">
                         </div>
                         <div class="col-lg-3 icon d-none d-lg-block">
                             <img src="../assets/icons/search-normal.png" alt="">
@@ -105,7 +104,6 @@
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="2"
                     class="d-md-none d-sm-none d-xs-none d-lg-block"></button>
             </div>
-
             <!-- The slideshow/carousel -->
             <div class="carousel-inner">
                 <div class="carousel-item first-item1 active">
@@ -140,46 +138,50 @@
                 <input type="text" placeholder="جستجو">
             </div>
             <div class="col-2 search-icon">
-                <img src="assets/icons/search-normal2.png" alt="">
+                <img src="../assets/icons/search-normal2.png" alt="">
             </div>
         </div>
     </div>
     <!-- start main -->
     <main>
-        <div class="container-fluid food-part ">
+        <!-- Start food-part section -->
+        <section class="food-part">
             <h1>پیشنهاد ویژه</h1>
-            <div id="demo" class="carousel slide container-fluid data-bs-ride="carousel">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
                 <!-- The slideshow/carousel -->
                 <div class="carousel-inner">
-                    <div class="carousel-item container-fluid active">
+                    <div class="carousel-item first-item-1 container-fluid active">
                         <div class="foods row container-fluid">
                             <!-- first -->
                             <div class="food col-lg-3 col-md-6 col-sm-6">
                                 <div class="card">
-                                    <img src="../assets/images/food pics/leave-dolme.png" class="card-img-top" alt="...">
+                                    <img src="../assets/images/food pics/leave-dolme.png" class="card-img-top"
+                                        alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">دلمه برگ کلم</h5>
-                                        <div class="row card-text">
-                                            <div class="col interest">
+                                        <div class="row card-text justify-content-between">
+                                            <div class="col interest ">
                                                 <img src="../assets/icons/Heart.png" alt="">
                                                 <span>افزودن به علاقمندی‌ها</span>
                                             </div>
-                                            <div class="col discount">
-                                                <div class="percent">%۸</div>
+                                            <div class="col-5 discount d-flex justify-content-between">
                                                 <span>۲۲۰٬۰۰۰</span>
+                                                <div class="percent ">%۸</div>
                                             </div>
                                         </div>
-                                        <div class="row card-text">
-                                            <div class="col">
+                                        <div class="row card-text justify-content-between">
+                                            <div class="col-6 score">
                                                 <img src="../assets/icons/Star.png" alt="">
                                                 <strong>۵</strong>
                                                 <span>(۵۲ امتیاز)</span>
                                             </div>
-                                            <div class="col">
+                                            <div class="col-5 expense">
                                                 <strong>۲۰۹٬۰۰۰ تومان</strong>
                                             </div>
                                         </div>
+                                        <button class="btn shop">افزودن به سبد خرید</button>
                                     </div>
+
                                 </div>
                             </div>
                             <!-- second -->
@@ -188,26 +190,27 @@
                                     <img src="../assets/images/food pics/bademjan.png" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">بادمجان شکم‌پر</h5>
-                                        <div class="row card-text">
-                                            <div class="col interest">
+                                        <div class="row card-text justify-content-between">
+                                            <div class="col interest ">
                                                 <img src="../assets/icons/Heart.png" alt="">
                                                 <span>افزودن به علاقمندی‌ها</span>
                                             </div>
-                                            <div class="col discount">
-                                                <div class="percent">%۸</div>
+                                            <div class="col-5 discount d-flex justify-content-between">
                                                 <span>۲۲۰٬۰۰۰</span>
+                                                <div class="percent ">%۸</div>
                                             </div>
                                         </div>
-                                        <div class="row card-text">
-                                            <div class="col">
+                                        <div class="row card-text justify-content-between">
+                                            <div class="col score">
                                                 <img src="../assets/icons/Star.png" alt="">
-                                                <strong>۴</strong>
+                                                <strong>۵</strong>
                                                 <span>(۵۲ امتیاز)</span>
                                             </div>
-                                            <div class="col">
-                                                <strong>۱۳۶٬۰۰۰ تومان</strong>
+                                            <div class="col-5 expense">
+                                                <strong>۲۰۹٬۰۰۰ تومان</strong>
                                             </div>
                                         </div>
+                                        <button class="btn shop">افزودن به سبد خرید</button>
                                     </div>
                                 </div>
                             </div>
@@ -217,74 +220,429 @@
                                     <img src="../assets/images/food pics/kalzoone.png" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">کالزونه اسفناج</h5>
-                                        <div class="row card-text">
-                                            <div class="col interest">
+                                        <div class="row card-text justify-content-between">
+                                            <div class="col interest ">
                                                 <img src="../assets/icons/Heart.png" alt="">
                                                 <span>افزودن به علاقمندی‌ها</span>
                                             </div>
-                                            <div class="col discount">
-                                                <div class="percent">%۸</div>
+                                            <div class="col-5 discount d-flex justify-content-between">
                                                 <span>۲۲۰٬۰۰۰</span>
+                                                <div class="percent ">%۸</div>
                                             </div>
                                         </div>
-                                        <div class="row card-text">
-                                            <div class="col">
+                                        <div class="row card-text justify-content-between">
+                                            <div class="col score">
                                                 <img src="../assets/icons/Star.png" alt="">
                                                 <strong>۵</strong>
                                                 <span>(۵۲ امتیاز)</span>
                                             </div>
-                                            <div class="col">
-                                                <strong>۱۷۷٬۰۰۰ تومان</strong>
+                                            <div class="col-5 expense">
+                                                <strong>۲۰۹٬۰۰۰ تومان</strong>
                                             </div>
                                         </div>
+                                        <button class="btn shop">افزودن به سبد خرید</button>
                                     </div>
                                 </div>
                             </div>
                             <!-- Fourth -->
                             <div class="food col-lg-3 col-md-6 col-sm-6">
                                 <div class="card">
-                                    <img src="../assets/images/food pics/pizza-qarch.png" class="card-img-top" alt="...">
+                                    <img src="../assets/images/food pics/pizza-qarch.png" class="card-img-top"
+                                        alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">پیتزا قارچ</h5>
-                                        <div class="row card-text">
-                                            <div class="col interest">
+                                        <div class="row card-text justify-content-between">
+                                            <div class="col interest ">
                                                 <img src="../assets/icons/Heart.png" alt="">
                                                 <span>افزودن به علاقمندی‌ها</span>
                                             </div>
-                                            <div class="col discount">
-                                                <div class="percent">%۸</div>
+                                            <div class="col-5 discount d-flex justify-content-between">
                                                 <span>۲۲۰٬۰۰۰</span>
+                                                <div class="percent ">%۸</div>
                                             </div>
                                         </div>
-                                        <div class="row card-text">
-                                            <div class="col">
+                                        <div class="row card-text justify-content-between">
+                                            <div class="col score">
                                                 <img src="../assets/icons/Star.png" alt="">
-                                                <strong>۳</strong>
+                                                <strong>۵</strong>
                                                 <span>(۵۲ امتیاز)</span>
                                             </div>
-                                            <div class="col">
-                                                <strong>۱۷۵٬۰۰۰ تومان</strong>
+                                            <div class="col-5 expense">
+                                                <strong>۲۰۹٬۰۰۰ تومان</strong>
                                             </div>
                                         </div>
+                                        <button class="btn shop">افزودن به سبد خرید</button>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </div>
-                    <div class="carousel-item second-item1 ">
+                    <div class="carousel-item second-item-2 container-fluid">
+                        <div class="foods row container-fluid">
+                            <!-- second -->
+                            <div class="food col-lg-3 col-md-6 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/images/food pics/bademjan.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">بادمجان شکم‌پر</h5>
+                                        <div class="row card-text justify-content-between">
+                                            <div class="col interest ">
+                                                <img src="../assets/icons/Heart.png" alt="">
+                                                <span>افزودن به علاقمندی‌ها</span>
+                                            </div>
+                                            <div class="col-5 discount d-flex justify-content-between">
+                                                <span>۲۲۰٬۰۰۰</span>
+                                                <div class="percent ">%۸</div>
+                                            </div>
+                                        </div>
+                                        <div class="row card-text justify-content-between">
+                                            <div class="col score">
+                                                <img src="../assets/icons/Star.png" alt="">
+                                                <strong>۵</strong>
+                                                <span>(۵۲ امتیاز)</span>
+                                            </div>
+                                            <div class="col-5 expense">
+                                                <strong>۲۰۹٬۰۰۰ تومان</strong>
+                                            </div>
+                                        </div>
+                                        <button class="btn shop">افزودن به سبد خرید</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- first -->
+                            <div class="food col-lg-3 col-md-6 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/images/food pics/leave-dolme.png" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">دلمه برگ کلم</h5>
+                                        <div class="row card-text justify-content-between">
+                                            <div class="col interest ">
+                                                <img src="../assets/icons/Heart.png" alt="">
+                                                <span>افزودن به علاقمندی‌ها</span>
+                                            </div>
+                                            <div class="col-5 discount d-flex justify-content-between">
+                                                <span>۲۲۰٬۰۰۰</span>
+                                                <div class="percent ">%۸</div>
+                                            </div>
+                                        </div>
+                                        <div class="row card-text justify-content-between">
+                                            <div class="col score">
+                                                <img src="../assets/icons/Star.png" alt="">
+                                                <strong>۵</strong>
+                                                <span>(۵۲ امتیاز)</span>
+                                            </div>
+                                            <div class="col-5 expense">
+                                                <strong>۲۰۹٬۰۰۰ تومان</strong>
+                                            </div>
+                                        </div>
+                                        <button class="btn shop">افزودن به سبد خرید</button>
+                                    </div>
+                                </div>
+                            </div>
 
-                    </div>
-                    <div class="carousel-item third-item1 ">
-
+                            <!-- Fourth -->
+                            <div class="food col-lg-3 col-md-6 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/images/food pics/pizza-qarch.png" class="card-img-top"
+                                        alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">پیتزا قارچ</h5>
+                                        <div class="row card-text justify-content-between">
+                                            <div class="col interest ">
+                                                <img src="../assets/icons/Heart.png" alt="">
+                                                <span>افزودن به علاقمندی‌ها</span>
+                                            </div>
+                                            <div class="col-5 discount d-flex justify-content-between">
+                                                <span>۲۲۰٬۰۰۰</span>
+                                                <div class="percent ">%۸</div>
+                                            </div>
+                                        </div>
+                                        <div class="row card-text justify-content-between">
+                                            <div class="col score">
+                                                <img src="../assets/icons/Star.png" alt="">
+                                                <strong>۵</strong>
+                                                <span>(۵۲ امتیاز)</span>
+                                            </div>
+                                            <div class="col-5 expense">
+                                                <strong>۲۰۹٬۰۰۰ تومان</strong>
+                                            </div>
+                                        </div>
+                                        <button class="btn shop">افزودن به سبد خرید</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Third -->
+                            <div class="food col-lg-3 col-md-6 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/images/food pics/kalzoone.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">کالزونه اسفناج</h5>
+                                        <div class="row card-text justify-content-between">
+                                            <div class="col interest ">
+                                                <img src="../assets/icons/Heart.png" alt="">
+                                                <span>افزودن به علاقمندی‌ها</span>
+                                            </div>
+                                            <div class="col-5 discount d-flex justify-content-between">
+                                                <span>۲۲۰٬۰۰۰</span>
+                                                <div class="percent ">%۸</div>
+                                            </div>
+                                        </div>
+                                        <div class="row card-text justify-content-between">
+                                            <div class="col score">
+                                                <img src="../assets/icons/Star.png" alt="">
+                                                <strong>۵</strong>
+                                                <span>(۵۲ امتیاز)</span>
+                                            </div>
+                                            <div class="col-5 expense">
+                                                <strong>۲۰۹٬۰۰۰ تومان</strong>
+                                            </div>
+                                        </div>
+                                        <button class="btn shop">افزودن به سبد خرید</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev d-none d-lg-block" type="button" data-bs-target="#demo"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon arrow-btn"></span>
+                </button>
+                <button class="carousel-control-next d-none d-lg-block" type="button" data-bs-target="#demo"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon  arrow-btn"></span>
+                </button>
+            </div>
+        </section>
+        <!-- End food-part section -->
+        <!-- start Akbatan -->
+        <section class="akbatan position-relative">
+            <h1>شعبه اکباتان</h1>
+            <div id="demo" class="carousel slide " data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0"
+                        class="active d-md-none d-sm-none d-xs-none d-lg-block"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"
+                        class="d-md-none d-sm-none d-xs-none d-lg-block"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"
+                        class="d-md-none d-sm-none d-xs-none d-lg-block"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner ">
+                    <div class="carousel-item active">
+                        <img src="../assets/images/branch/main-2.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/branch/main-3-3.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/branch/main-pic.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev d-none d-lg-block" type="button" data-bs-target="#demo"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
                 <button class="carousel-control-next d-none d-lg-block" type="button" data-bs-target="#demo"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </button>
             </div>
-        </div>
+            <!-- End slide -->
+            <!-- Start contact box -->
+            <div class="contact-container g-0 d-flex justify-content-center align-items-center">
+                <div class="contact-box">
+                    <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-6 col-lg-3 order-2 order-lg-1 mt-3">
+                            <div class="contact-icon d-inline d-lg-flex align-items-center justify-content-center mb-1">
+                                <img src="../assets/icons/call-calling1.png" alt="">
+                            </div>
+                            <div class="contact-detail  d-inline d-lg-block text-center">
+                                <span class="d-inline d-lg-block">۰۲۱-۳۳۵۳۵۳۵۴ -</span>
+                                <span class="d-inline d-lg-block">۰۲۱-۳۳۵۳۵۳۵۶</span>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-lg-4 order-1 order-lg-2 ">
+                            <div
+                                class="contact-icon d-inline  d-lg-flex align-items-center justify-content-center mb-1">
+                                <img src="../assets/icons/location.png" alt="">
+                            </div>
+                            <div class="contact-detail d-inline d-lg-block text-center">
+                                <span>شهرک اکباتان، فاز ۳، مجتمع تجاری کوروش، طبقه سوم</span>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-4 order-3 mt-3 mt-lg-0">
+                            <div
+                                class="contact-icon d-inline  d-lg-flex align-items-center justify-content-center mb-1 ">
+                                <img src="../assets/icons/clock1.png" alt="">
+                            </div>
+                            <div class="contact-detail d-inline d-lg-block text-center">
+                                <span>همه‌روزه از ساعت ۱۲ الی ۲۳</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Akbatan -->
+        <!-- start feedbacks -->
+        <section class="feedbacks container">
+            <h1>نظرات کاربران</h1>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="feedback">
+                        <div class="row d-flex gap-2">
+                            <div class="col-12 col-sm-3">
+                                <div class="user-pic">
+                                    <img src="../assets/images/users/second.png" alt="">
+                                </div>
+                                <div class="user-name">
+                                    <span>آرزو محمدعلیزاده</span>
+                                    <span>۲۳ اسفند ۱۴۰۱</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-8">
+                                <div class="descript">
+                                    <p>از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا
+                                        خوردم.
+                                        از
+                                        مدیریت شعبه اکباتان رستوران‌های
+                                        ترخینه واقعا تشکر میکنم.
+                                    </p>
+                                </div>
+                                <div class="score1">
+                                    <img src="../assets/icons/Star.png" alt="">
+                                    <span>۴</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                    <div class="feedback">
+                        <div class="row d-flex gap-2">
+                            <div class="col-12 col-sm-3 ">
+                                <div class="user-pic">
+                                    <img src="../assets/images/users/first.png" alt="">
+                                </div>
+                                <div class="user-name">
+                                    <span>سردار وظیفه</span>
+                                    <span>۲۳ اسفند ۱۴۰۱</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-8">
+                                <div class="descript">
+                                    <p>از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا
+                                        خوردم.
+                                        از
+                                        مدیریت شعبه اکباتان رستوران‌های
+                                        ترخینه واقعا تشکر میکنم.
+                                    </p>
+                                </div>
+                                <div class="score1">
+                                    <img src="../assets/icons/Star.png" alt="">
+                                    <span>۴</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End feedbacks -->
     </main>
+    <!-- start footer -->
+    <footer class="container-fluid ">
+        <div class="row justify-content-between">
+            <div class="col-6 col-lg-3 footer-menu">
+                <h3>دسترسی آسان</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            پرسش‌های متداول
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">قوانین ترخینه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">حریم خصوصی</a>
+                    </li>
+                </ul>
+                <div class="medias mx-auto">
+                    <div class="media">
+                        <a href="#"><img src="assets/icons/tweeter.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media">
+                        <a href="#"><img src="assets/icons/insta.png" alt=""></a>
+                    </div>
+                    <div class="media">
+                        <a href="#"><img src="assets/icons/telegram.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-6 col-lg-3 footer-menu">
+                <h3>شعبه‌های ترخینه</h3>
+                <ul class="nav flex-column">
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link">شعبه اکباتان</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">شعبه چالوس</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">شعبه اقدسیه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">شعبه ونک</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-12 footer-form d-none d-md-block ">
+                <h3>پیام به ترخینه</h3>
+                <form action="" class="form">
+                    <div class="row gap-3">
+                        <div class=" col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="fname" placeholder="نام و نام خانوادگی">
+                                <label for="fname">نام و نام خانوادگی</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="phone number"
+                                    placeholder="شماره تماس خود را وارد کنید">
+                                <label for="phone number">شماره تماس</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="phone number"
+                                    placeholder="ایمیل خود را وارد کنید">
+                                <label for="phone number">آدرس ایمیل <small>(اختیاری)</small></label>
+                            </div>
+                        </div>
+                        <div class="col-md-5 p-0">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="پیام شما">پیام شما</textarea>
+                            <span class="number d-block">۰/۱۲۰۰</span>
+                            <div class="form-button ">
+                                <input type="button" value="ارسال پیام">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
 
     <script src="../js/bootstrap.bundle.js"></script>
 </body>
