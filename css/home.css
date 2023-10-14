@@ -322,6 +322,11 @@ button.web {
     border: 1px solid #315F41;
 }
 
+button.web:hover {
+    background-color: var(--light-green);
+    border: 1px solid #315F41;
+}
+
 div.card-footer button:hover {
     background-color: var(--light-green);
 
