@@ -1,2 +1,2 @@
-# restaurant.github.io
-It is a full website for a Persian restaurant that is made by Html, CSS and Bootstrap. The website is fully responsive and I made it for educational purpose.
+An educational practice website for a Persian restaurant which I'm currently working on it and it's designed by HTML, CSS and Bootstrap. <br/>
+live demo: https://masoomamousavi.github.io/restaurant.github.io/
